@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles\styles.css" type="text/css">
+	</head>
+	
+	<body>
+
+        <!-- Форма "Регистрация" -->
+        <section>
+			<a type="button" href="index.html">На главную</a>
+            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Регистрация</h2>
+            <form action="/" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Логин" required>
+                <fieldset>
+                    <div>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Зарегистрироваться">
+                    <button type="button">Отмена</button>
+                </fieldset>
+                <a type="button" href="login.html">У меня уже есть аккаунт</a>
+            </form>
+        </section>
+        <!--/ Форма "Регистрация" -->
+	</body>
+</html>
+

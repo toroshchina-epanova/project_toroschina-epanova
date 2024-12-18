@@ -1,96 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="images/логотип.jpeg" alt=""width="100">
-<h1>BookLand</h1>
-<nav>
-    <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Личный кабинет</a></li>
-        <li><a href="#">Корзина</a></li>
-        <li><a href="#">Избранное</a></li>
-        <li><a href="#">Поиск</a></li>
-    </ul>
-</nav>
-
- <!--/ Навигация -->
- <button type="button">
-    <img src="images/icon/login.svg" alt="Войти" width="16" height="16">
-    <span>Войти</span>
-</button>
-</header>
-<!--/ Заголовок -->
-<!-- Основной контент -->
-<main>
-        <!-- Первый экран -->
-        <section>
-            <div>
-                <h2>Добро пожаловать в страну книг!</h2>
-                <p>Огромный ассортимент книг по разным категориям.</p>
-                <a href="#" target="_blank"> Каталог</a>
-            </div>
-            <img src="images/изображение книг.jpeg" alt="Изображение книг" width="602" height="800">
-        </section>
-        <!--/ Первый экран -->
-
-         <section>
-            <h2>Почему выбирают именно нас?</h2>
-            <ul>
-                <li>
-                    <img src="images/иконка1.png" alt="Иконка " width="22" height="24">
-                    <h3>Много книг</h3>
-                    <p>Огромный выбор книг по разным категориям</p>
-                </li>
-                <li>
-                    <img src="images/иконка2.png" alt="Иконка" width="24" height="24">
-                    <h3>Они интересны</h3>
-                    <p>Отзывы о каждой книге, не меньше 4,8 баллов</p>
-                </li>
-                <li>
-                    <img src="images/иконка3.png" alt="Иконка " width="24" height="23">
-                    <h3>Доступная цена</h3>
-                    <p>Покупай книги по выгодым ценам</p>
-                </li>
-        
-            </ul>
-         </section>
-<main>
-<a href="#">Вход</a>
-<a href="#">Регистрация</a>
- </header>
-    <main>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles\styles.css" type="text/css">
+	</head>
+	
+	<body>
+		<header class="header">
+			<img class="header__logo" src="images/logo.jpeg" alt="logotype" width="120"  height="120">
+			<h1 class="header__title">BookLand</h1>
+			<a class="header__button" href="login.html">Вход</a>
+			<a class="header__button" href="registration.html">Регистрация</a>
+		
+			<!--/ Навигация -->
+			<nav class="header__menu">
+				<ul class="menu"> 
+					<li class="menu__item menu__item---active">
+						<a class="menu__link" href="index.html">Главная</a>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="#">Корзина</a></li>
+					<li class="menu__item"><a class="menu__link" href="login.html">Личный кабинет</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Избранное</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Поиск</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--/ Навигация -->
 
 
-
-
-    </main>
-    <footer>
-<p>Cайт создан Торощиной Ириной,Епановой Оксаной группа СТ-22</p>
-<ul>
-    <li><a href="#"> Правовая оговорка</a></li>
-    <li><a href="#"> Пользовательское соглашение</a></li>
-    <li><a href="#"> Политика конфиденциальности</a></li>
-</ul>
-    </footer>
- <!-- Форма "Войти" -->
- <section>
-    <form action="/">
-        <h1>Вход в личный кабинет</h1>
-        <input type="email" name="email" placeholder="Номер телефона" required>
-        <input type="password" name="password" placeholder="Пароль" required>
-        <fieldset>
-            <input type="submit" value="Войти">
-            <button type="button">Отмена</button>
-        </fieldset>
-        <button type="button">У меня еще нет аккаунта</button>
-    </form>
-</section>
-<!--/ Форма "Войти" -->
-</body>
+		<!-- Основной контент -->
+		<main class="main">
+			<!-- Первый экран -->
+			<section class="section-promo">
+				<div class="promo__content">
+					<h2 class="promo__title section__title">Добро пожаловать в страну книг!</h2>
+					<p class="promo__description">Огромный ассортимент книг по разным категориям.</p>
+					<li> <a class="menu__link" href="catalog.html">Каталог</a></li>
+				</div>
+				<img src="images/изображение книг.jpeg" alt="Изображение книг" width="460" height="357">
+			</section>
+			<!--/ Первый экран -->
+	
+			<section class="section-cards">
+				<h2 class="section__title">Почему выбирают именно нас?</h2>
+				<ul class="card__list">
+					<li class="card__item">
+						<img class="card__icon" src="images/icon1.png" alt="Иконка " width="48" height="48">
+						<h3 class="card__title">Много книг</h3>
+						<p class="card__description">Огромный выбор книг по разным категориям</p>
+					</li>
+					<li class="card__item">
+						<img class="card__icon"src="images/icon2.png" alt="Иконка" width="48" height="48">
+						<h3 class="card__title">Они интересны</h3>
+						<p class="card__description">Отзывы о каждой книге, не меньше 4,8 баллов</p>
+					</li>
+					<li class="card__item">
+						<img class="card__icon" src="images/icon3.png" alt="Иконка" width="48" height="48">
+						<h3 class="card__title">Доступная цена</h3>
+						<p class="card__description">Покупай книги по выгодым ценам</p>
+					</li>
+				</ul>
+			</section>
+		</main>
+	
+ 
+		<footer class="footer">
+			<p> Cайт создан Торощиной Ириной,Епановой Оксаной группа СТ-22</p>
+			<ul>
+				<li><a href="Legal_Disclaimer.html"> Правовая оговорка</a></li>
+				<li><a href="User_Agreement.html"> Пользовательское соглашение</a></li>
+				<li><a href="Privacy_Policy.html"> Политика конфиденциальности</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
+
